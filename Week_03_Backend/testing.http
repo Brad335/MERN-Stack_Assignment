@@ -1,0 +1,97 @@
+### =======================
+### USERS API TESTING
+### =======================
+
+### Get all users
+GET http://localhost:3000/users
+
+###
+
+### Create a new user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Sai",
+  "age": 21
+}
+
+###
+
+### Update existing user
+PUT http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Yhwach",
+  "age": 91
+}
+
+###
+
+### Get user by ID
+GET http://localhost:3000/users/1
+
+###
+
+### Delete user by ID
+DELETE http://localhost:3000/users/1
+
+
+### =======================
+### PRODUCTS API TESTING
+### =======================
+
+### Get all products
+GET http://localhost:3000/products
+
+###
+
+### Create a new product
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "productId": 101,
+  "name": "Laptop Charger",
+  "price": 5000,
+  "brand": "ASUS"
+}
+
+###
+
+### Create another product
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "productId": 102,
+  "name": "Mouse",
+  "price": 1500,
+  "brand": "Logitech"
+}
+
+###
+
+### Get product by brand
+GET http://localhost:3000/products/ASUS
+
+###
+
+### Update product by brand
+PUT http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "productId": 101,
+  "name": "Fast Charger",
+  "price": 5500,
+  "brand": "ASUS"
+}
+
+###
+
+### Delete product by brand
+DELETE http://localhost:3000/products/ASUS
